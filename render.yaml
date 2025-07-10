@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: leafy-ml-api
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
